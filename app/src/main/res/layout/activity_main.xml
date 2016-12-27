@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_above="@+id/notification_show"
+    android:layout_centerHorizontal="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="10dp"
+        tools:context="com.android4learning.notifications.MainActivity">
+
+        <TextView
+            android:id="@+id/notification_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Android4Learning | Notifications"
+            android:textColor="#2D3E50"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/notification_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/notification_title"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Show Standard Notification"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/notification_standard_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/notification_show"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Cancel Standard Notification"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/notification_vibration_sound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/notification_standard_cancel"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Vibration and Sound Notification"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/notification_heads_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notification_vibration_sound"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Show Heads-up Notification"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/notification_inbox_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notification_heads_up"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Show InboxStyle Notification"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/notification_direct_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/notification_bundled"
+            android:layout_alignStart="@+id/notification_bundled"
+            android:layout_below="@+id/notification_bundled"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Show Direct Reply Notification"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/notification_bundled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notification_custom_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Show Bundled Notification"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/notification_custom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/notification_inbox_style"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Show Custom Layout Notification"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/notification_messaging_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/notification_direct_reply"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Show Messaging Style Notification"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
